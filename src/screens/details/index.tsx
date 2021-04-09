@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ActivityIndicator, Image, StyleSheet, View } from 'react-native';
 import ImageZoom from 'react-native-image-pan-zoom';
-import colors from '../../config/colors';
-import { screenWidth, screenHeight } from '../../config/constants';
+import colors from '@config/colors';
+import { screenWidth, screenHeight } from '@config/constants';
 
 const PhotoDetails = ({
   route: {

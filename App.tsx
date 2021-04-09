@@ -1,11 +1,11 @@
 import * as React from 'react';
-import store from './src/store';
-import HomeScreen from './src/screens/home';
-import PhotoDetails from './src/screens/details';
+import store from '@store/index';
+import HomeScreen from '@screens/home';
+import PhotoDetails from '@screens/details';
 import { Provider } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { DETAILS_SCREEN, HOME_SCREEN } from './src/screens';
+import { DETAILS_SCREEN, HOME_SCREEN } from '@screens/index';
 
 const Stack = createStackNavigator();
 

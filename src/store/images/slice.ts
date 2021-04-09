@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import reactotron from 'reactotron-react-native';
-import { WebImage, ImageState } from '../../types/ImageTypes';
+import { WebImage, ImageState } from '@type/ImageTypes';
 
 const initialState: ImageState = {
   images: [],
@@ -12,12 +11,10 @@ export const imageSlice = createSlice({
   initialState,
   reducers: {
     loadImages: (state: ImageState, action: PayloadAction<WebImage[]>) => {
-      reactotron.log('action', action);
       state.images = action.payload;
       state.page++;
     },
     loadMore: (state: ImageState, action: PayloadAction<WebImage[]>) => {
-      reactotron.log('load more', action);
       state.images = [...state.images, ...action.payload];
       state.page++;
     },

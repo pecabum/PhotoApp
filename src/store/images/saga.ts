@@ -1,8 +1,7 @@
 import { PayloadAction } from '@reduxjs/toolkit';
-import reactotron from 'reactotron-react-native';
 import { put, select, takeLatest } from 'redux-saga/effects';
-import { apiRequest, getImagesUrl } from '../../api';
-import { WebImage } from '../../types/ImageTypes';
+import { apiRequest, getImagesUrl } from '@api/index';
+import { WebImage } from '@type/ImageTypes';
 import { GetImagesAction, LoadMoreImagesAction } from './actions';
 import { imagesSelector, loadImages, loadMore } from './slice';
 

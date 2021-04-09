@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import ImageItem from '../../components/ImageItem';
+import ImageItem from '@components/ImageItem';
 import {
   GetImagesAction,
   LoadMoreImagesAction,
-} from '../../store/images/actions';
-import { imagesSelector } from '../../store/images/slice';
+} from '@store/images/actions';
+import { imagesSelector } from '@store/images/slice';
 
 const HomeScreen = ({ navigation }) => {
   const dispatch = useDispatch();

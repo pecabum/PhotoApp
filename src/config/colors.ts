@@ -1,3 +1,3 @@
-const ACCENT_COLOR = '#0000ff';
+const ACCENT_COLOR = '#1475fc';
 
 export default { ACCENT_COLOR };

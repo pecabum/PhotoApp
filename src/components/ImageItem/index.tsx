@@ -5,10 +5,10 @@ import {
   Image,
   ActivityIndicator,
 } from 'react-native';
-import colors from '../../config/colors';
-import { screenWidth } from '../../config/constants';
-import { DETAILS_SCREEN } from '../../screens';
-import { WebImage } from '../../types/ImageTypes';
+import colors from '@config/colors';
+import { screenWidth } from '@config/constants';
+import { DETAILS_SCREEN } from '@screens/index';
+import { WebImage } from '@type/ImageTypes';
 
 interface ImageItemProps {
   item: WebImage;
