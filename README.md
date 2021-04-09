@@ -5,15 +5,25 @@
 **git clone https://github.com/pecabum/PhotoApp.git**
 
 When you're done you need to enter the folder of the app
-**cd PhotoApp**
+```
+cd PhotoApp
+```
 
 Install the required packages
-**npm install**
+```
+npm install
+```
 
 Install all dependencies for the iOs project
-**npx pod-install**
+```
+npx pod-install
+```
 
 Run the app 
-**npx react-native run-ios**
+```
+npx react-native run-ios
+```
 or 
-**npx react-native run-android**
+```
+npx react-native run-android
+```
