@@ -2,7 +2,9 @@
 
 ****Installing****
 
-**git clone https://github.com/pecabum/PhotoApp.git**
+```
+git clone https://github.com/pecabum/PhotoApp.git
+```
 
 When you're done you need to enter the folder of the app
 ```
