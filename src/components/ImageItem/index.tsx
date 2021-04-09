@@ -5,7 +5,6 @@ import {
   Image,
   ActivityIndicator,
 } from 'react-native';
-import FastImage from 'react-native-fast-image';
 import colors from '../../config/colors';
 import { screenWidth } from '../../config/constants';
 import { DETAILS_SCREEN } from '../../screens';
@@ -30,18 +29,6 @@ const ImageItem = ({ item, navigation }: ImageItemProps) => {
           style={styles.indicator}
         />
       )}
-      {/* <FastImage
-        style={{ width: screenWidth, height: 200 }}
-        onLoadStart={() => setImageLoading(true)}
-        onLoad={() => setImageLoading(true)}
-        onLoadEnd={() => setImageLoading(false)}
-        source={{
-          uri: item.url,
-          priority: FastImage.priority.low,
-          cache: 'immutable',
-        }}
-        resizeMode={FastImage.resizeMode.contain}
-      /> */}
       <Image
         resizeMode="cover"
         onLoadStart={() => setImageLoading(true)}
